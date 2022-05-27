@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katherine Johnson Tribute Page</title>
+    <script src="https://kit.fontawesome.com/1f5aa4ec6b.js" crossorigin="anonymous"></script>
+    <style>
+        ::-webkit-scrollbar{
+            width: 20px;
+            height: 15px;
+            
+        }
+        ::-webkit-scrollbar-track{
+            background-color: #fff;
+            box-shadow: inset 0px 2px 4px rgb(74, 75, 74);
+            
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #b40303;
+            border-radius: 10px;
+            border-left: solid 5px white;
+            border-right: solid 5px white;
+            border-top: solid 2px white;
+            border-bottom: solid 2px white;
+            width: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover{
+            background-color: #8b0000;
+            
+        }
+        ::-webkit-file-upload-button{
+            background-color: #8b0000;
+            
+        }
+        ::-webkit-scrollbar-button:single-button{
+            background-color: #b40303;
+            display: block;
+            background-size: 15px;
+            background-repeat: no-repeat;
+        }
+        ::-webkit-scrollbar-button:vertical:start:decrement {
+            background:
+                linear-gradient(120deg, #8b0000 40%, rgba(0, 0, 0, 0) 41%),
+                linear-gradient(240deg, #8b0000 40%, rgba(0, 0, 0, 0) 41%),
+                linear-gradient(0deg, #8b0000 30%, rgba(0, 0, 0, 0) 31%);
+            background-color: #fff;
+        }
+
+        ::-webkit-scrollbar-button:vertical:end:increment {
+            background:
+                linear-gradient(300deg, #8b0000 40%, rgba(0, 0, 0, 0) 41%),
+                linear-gradient(60deg, #8b0000 40%, rgba(0, 0, 0, 0) 41%),
+                linear-gradient(180deg, #8b0000 30%, rgba(0, 0, 0, 0) 31%);
+            background-color: #fff;
+        }
+
+        ::-webkit-scrollbar-button:horizontal:end:increment {
+            background:
+                linear-gradient(210deg, #8b0000 40%, rgba(0, 0, 0, 0) 41%),
+                linear-gradient(330deg, #8b0000 40%, rgba(0, 0, 0, 0) 41%),
+                linear-gradient(90deg, #8b0000 30%, rgba(0, 0, 0, 0) 31%);
+            background-color: #fff;
+        }
+
+        ::-webkit-scrollbar-button:horizontal:start:decrement {
+            background:
+                linear-gradient(30deg, #8b0000 40%, rgba(0, 0, 0, 0) 41%),
+                linear-gradient(150deg, #8b0000 40%, rgba(0, 0, 0, 0) 41%),
+                linear-gradient(270deg, #8b0000 30%, rgba(0, 0, 0, 0) 31%);
+            background-color: #fff;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'candara';
+            margin: 0;
+            padding: 0;
+        }
+        .headermore{
+            font-size: xx-large;
+            margin-bottom: 0;
+        }
+
+        .headsect{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin:10vh;
+        }
+        .mainbody{
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+        }
+        aside{
+            display: flex;
+            flex-direction: column;
+            background-color: #8b0000;
+            margin-top: 60px;
+            float:left;
+            font-size: 2.5vh;
+            font-weight: 600;
+            width: 20%;
+            height: 100vh;
+
+
+        }
+        aside a{
+            height: 10vh;
+            padding: auto;
+            border-bottom: solid 1px #fff;
+            background-color: #8b0000;
+            color: #fff;
+            padding-top: 6vh;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        aside a:hover{
+            color: #8b0000;
+            background-color: #fff;
+            border-right: solid 2px #8b0000;
+            border-top: solid 2px #8b0000;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 5vh;
+           align-items: center;
+           justify-content: center;  
+            position: relative;
+            z-index: 9999;
+            border-bottom: solid 2px #8b0000;
+            padding-bottom: 30px;
+           
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+        }
+        .sticky2{
+            position: fixed;
+            top: 0;
+        }
+        main{
+        margin-left: 20vw;
+        width: 80%;
+        float: right;
+        position: absolute;
+        
+        }
+
+        nav p{
+            width: 50%;
+            color: #8b0000;
+            height: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-top: 50px;
+           font-size: 3vh;
+           font-weight: 600;
+           text-align: center;
+           background-color: #fff;
+            
+        }
+        nav a{
+            background-color: #8b0000;
+            width: 20%;
+            height: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-top: 50px;
+           font-size: 3vh;
+           font-weight: 600;
+           text-align: center;
+           color:#fff;
+           text-decoration: none;
+
+        }
+
+        nav a:hover{
+            color:#8b0000;
+            background-color: #fff;
+            cursor: pointer;
+            text-decoration: underline;
+            border-left:solid 2px #8b0000;
+        }
+        
+        blockquote{
+            font-style: italic;
+        }
+
+        .gallery{
+            display: flex;
+            background-color: #000;
+            flex-direction: row;
+            color: #fff;
+            padding: 10px;
+        
+            
+        }
+        .gallerytextparent{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+   
+        }
+
+        .kcjf, .career, .family, .awards, .earlylife, .education{
+            padding: 10px;
+        }
+        .kcjf h3, .awards h3, .family h3, .career h3, .earlylife h3, .education h3{
+            font-style: italic;
+            font-size: x-large;
+        }
+        .gallery h3{
+            font-size: 50px;
+            font-style: italic;
+        }
+
+
+        .gallerytxt{
+            font-style: italic;
+            font-size: large;
+            margin-top: 10%;
+            margin-left: 30%;
+            
+            
+        }
+        .gallerypics{
+            height: 80%;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            overflow-x: scroll;
+            margin-top: 5%;
+            padding: 5px;
+            margin-right: 4px;
+            
+            
+
+        }
+
+        #quotes{
+            padding: 10px;
+            color: #fff;
+            background-color: #8b0000;
+        }
+        #quotes h3{
+            font-size: 50px;
+            font-style: italic;
+        }
+        .quotesright, .quotesleft{
+            color: #fff;
+            font-style: italic;
+            font-weight:400;
+            font-size: medium;
+        }
+
+        .quotesright{
+            text-align: right;
+            text-decoration: none;
+            
+        }
+        
+        .quotesleft{
+            text-align: left;
+            width: 70%;
+            
+        }
+        .quotesright a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .quotesright a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+
+        }
+        
+        .buttonkjf{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .buttonkjf a{
+            margin: 10px;
+            padding: 10px;
+            color: #8b0000;
+            background-color: #fff;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            box-shadow: 2px 2px 6px dimgray;
+            text-decoration: none;
+            text-align: center;
+        }
+        .buttonkjf a:hover{
+            background-color: #8b0000;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .totop{
+            background-color: #8b0000;
+            height: 5vh;
+            width: 5vh;
+            border-radius: 50%;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+            padding-bottom: 20px;
+            padding-top: 5px;
+            z-index: 3;
+            text-decoration: none;
+
+        }
+        .totop span{
+            color: #fff;
+            font-size: xx-large;
+            font-weight: 900;
+        }
+
+        .sticky3{
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 999;
+        }
+
+        .timeline{
+            
+            padding: 10px;
+        }
+
+        .timeline h4{
+            color: #8b0000;
+            text-align: center;
+        }
+        .timeline h3{
+            text-align: center;
+            font-size: x-large;
+        }
+        .praise{
+            padding: 10px;
+        }
+        .praise h3{
+            font-size: xx-large;
+            font-style: italic;
+        }
+        .praiseright{
+            text-align: right;
+            font-size: larger;
+        }
+        footer{
+            text-align: center;
+            color: #fff;
+            background-color: #000;
+            margin-bottom: 0;
+            padding: 20px;
+            font-size: larger;
+        }
+        .footerlink, .gallerylink{
+            color: #fff;
+        }
+        .footerlink:hover, .gallerylink:hover{
+            color: #8b0000;
+        }
+        .icon{
+            color: #b40303;
+            text-decoration: none;
+        }
+        .icon:hover{
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sticky">
+        <p>Katherine Johnson Tribute Page</p>
+        <a href="#earlyLife">Early Life</a>
+        <a href="#education">Education</a>
+        <a href="#career">Career</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#awards">Awards</a>
+    </nav>
+    <br>
+    <section class="mainbody">
+        <aside class="sticky2">
+   
+            <a href="#kcjf">
+                The Katherine Johnson Foundation
+            </a>
+            <a href="#quotes">
+                Quotes
+            </a>
+            <a href="#timeline">
+                Timeline
+            </a>
+            <a href="#praise">
+                Praise for Katherine Johnson
+            </a>
+            <a href="#familyLife">
+                Family
+            </a>
+            
+
+        </aside>
+        <main>
+            <section class="headsect" id="top">
+                <h1 class="headermore">
+                    Katherine Johnson, n&eacute;e Coleman 
+                </h1> 
+                <h2>
+                    [August 26, 1918 - February 24, 2020]
+                </h2>
+                <h3>
+                    Notable aerospace technologist, mathematician, mother and wife
+                </h3>
+                <br>
+                <fig>
+                    <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/23178940342_d13d4aa5f6_o.jpg" width="200px" height="200px">
+                    <figcaption><small>Katherine Johnson recieving<br> presidential medal of freedom in 2015</small></figcaption>
+                </fig>
+                <br>
+                <blockquote cite="https://thehabitstacker.com/katherine-johnson-quotes/#:~:text=%2037%20Inspirational%20Katherine%20Johnson%20Quotes%20%201,just%20doing%20my%20job.%E2%80%9D%20%E2%80%93%20Katherine...%20More%20">
+                    “I don't have a feeling of inferiority. Never had. I'm as good as anybody, but no better.” <br> <strong> - Katherine Johnson</strong>
+                </blockquote>
+            </section>
+            <a class="totop sticky3" href="#top" >
+                    <span>
+                        &uarr;
+                    </span>
+            </a>
+            <article>
+                <div id="earlyLife" class="earlylife" title="Early Life of Katherine Johnson">
+                    <hr>
+                    <h3>Early Life</h3>
+                    <p>
+                        Katherine Johnson born Creola Katherine Coleman in White Sulphur Springs, Greenbrier County in West Virginia.
+                        She was the youngest of four children of Joshua Coleman, a lumberjack, handyman and farmer and his wife, Joylette Coleman.
+                    </p>
+                    <p>
+                        Her astounding acumen as a mathematician was beginning to get noticed and she graduated from the eighth grade at just 10 years old - for reference this was 3 to 4 years earlier than the average child would and by 13 was attending high school at the West Virginia state college.
+                    </p>
+                </div>
+                <hr>
+                <div id="education" class="education" title="Education">
+                    <h3>Education</h3>
+                    <p>
+                        Greenbrier County whee Katherine lived at the time didn't offer schooling for African-American students past eighth
+                        grade and so the family had to have their daughters attend high school in Institute within the West Virginia State College campus.
+                    </p>
+                    <p>
+                        She was attending high school at the age of 10 and graduated at 14 and 
+                    began college at West Virginia State College graduating at 18 <em>Summa cum laude</em> with a bachelors in Mathematics and French .
+                    </p>
+                    <p>
+                        She attended graduate school for a graduate math program for a year before she 
+                        left to start her family.
+                    </p>
+                </div>
+                <hr>
+                <div id="career" class="career" title="Career">
+                    <h3>Career</h3>
+                    <p>
+                        She began work as a teacher after college graduation in 1937 at a black public school but left to enroll 
+                        in the graduate program at West Virginia University and returned to teaching after the birth of her daughters.
+                    </p>
+                    <p>
+                        In 1952, a relative informed her about job openings at NACA which later became NASA in 1958 and 
+                        she applied and began work at the Langley Laboratory in NACA in 1953.
+                    </p>
+                    <p>
+                        She worked as a human computer in a group of ladies called " the West computers" but would later become the 
+                        go-to person to for calculations within the organization.
+                    </p>
+                    <p>
+                        She worked at NASA for 33 years and retired in 1986.
+                    </p>
+                </div>
+                <hr>
+                <div id="familyLife" class="family" title="Family">
+                    <h3>Family</h3>
+                    <p align="justify">
+                        She got married to her first husband, James Goble in 1939 and quit her job as a teacher 
+                        to enroll in a graduate math program. She later left the program a year later to focus 
+                        on her family. She had three children with James Goble: Constance, Joylette and Katherine.
+                        James Francis Goble was diagosed of brain tumor which was unoperable and he died in 1956.
+                    </p> 
+
+                    <p align="justify">
+                        Three years later, she married James A. "Jim" Johnson, an army veteran and they were together 
+                        till his death 60 years later in March 2019. He was aged 93.
+                    </p>
+                </div>
+                <hr>
+                <div  id="awards" class="awards" title="Awards">
+                    <h3>Awards</h3>
+                    <ul>
+                        <li>Presidential Medal of Freedom (2015)</li>
+                        <li>Silver Snoopy award (2016)</li>
+                        <li>NASA Group Achievement Award (2016)</li>
+                        <li>Congressional Gold Medal (2019)</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="kcjf" id="kcjf">
+                    <h3>The Katherine Johnson Foundation</h3>
+                    <p>KCGJ Foundation is synonymous with education and the joy of learning for young people.  Their mission is to encourage, inspire and empower youth to pursue careers in STEM—especially math and science.</p>
+                    <div class="buttonkjf">
+                        <a href="https://www.paypal.com/donate/?token=hk-adh5a3Zgva4gdXRekcSQm74rs3ohBB2EMtygbdSRl_j4a45lEwk2lSUY0F_N6lDBG9hzvivLOnLn_&locale.x=US" target="_blank">Donate to the foundation</a>
+                        <a href="https://www.katherinejohnsonfoundation.org/" target="_blank">Visit the foundation Homepage</a>
+                    </div>
+                </div>
+                <hr>
+                <div id="timeline" class="timeline">
+                    <h4>TIMELINE</h4>
+                    <h3>Notable Achievement at a Glance</h3>
+                    <ul>
+                        <li>
+                        <strong>1932:</strong> She graduated from high school at the age of 14, matriculated at West Virginia State College (WVSC), an historically black college. She took every course in mathematics offered by the College that her Professor had to add new mathematical courses just for her.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>1937:</strong> She graduated <em>Summa cum laude</em> - highest honours - from the West 
+                            Virginia State College, with degrees in mathematics and French,
+                            at age 18 and was a member of Alpha Kappa Alpha (a sorority on campus).
+                        </li>
+                        <br>
+                        <li>
+                            <strong>1939:</strong> She was handpicked by West Virginia State's predident, Dr John W. Davis to be one of three black students to integrate the graduate school at the state's flagship school, West Virginia University and was the only female of the three.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>1953:</strong> She began work in National Aerospace ans Space Administration (NASA) known then as National Advisory Committee for Aeronautics (NACA).
+                        </li>
+                        <br>
+                        <li>
+                            <strong>1960</strong> She co-authored a paper on calculations for placing a spacecraft on the moon and t was the first time a woman would recieve credit as an author on a research report, authored and co-authored 25 more scientific papers throughout her lifetime.
+                        </li>
+                        <br>
+                        <li>
+                           <strong>1961:</strong> Her calculations of orbital mechanics as a NASA employee were critical to the success of the first(Freedom Z) and subsequent U.S. crewed spaceflights.
+                        </li>
+                        <br>
+                        <li>
+                           <strong>1969:</strong> She worked on calculations that helped synch Project Apollo's Lunar Module with the lunar-orbiting Command and Service Module. 
+                        </li>
+                        <br>
+                        <li>
+                            <strong>1972</strong> She worked on the Space Shuttle and the Earth Resources Technology Satellite (ERTS, later renamed Landsat)
+                        </li>
+                        <br>
+                        <li>
+                            <strong>1986</strong> She retired from NASA after 33 years of work. She was 68 years.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>2015:</strong> She was awarded a Presidential Medal of Freedom in 2015 by President Barack Obama. 
+                        </li>
+                        <br>
+                        <li>
+                            <strong>2016:</strong> The movie 'Hidden Figure' were she was played by Taraji P. Henson was released about her time at NASA. the Racial and Gender seggregation and how her hardwork and competence began to get acknowledged within NASA. 
+                        </li>
+                        <br>
+                        <li>
+                            <strong>2020:</strong> She was a wife, mother, sister, daughter, grandmother and great grandmother who lived a fulfilling family and career life until her death at 93 in February 2020. 
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <hr>
+            <section class="gallery" id="gallery">
+                <div class="gallerytextparent">
+                    <h3>Gallery</h3>
+                    <div class="gallerytxt">Explore the life of Katherine Creole Johnson in pictures.</div>
+                </div>
+                <div class="gallerypics">
+                    <figure>
+                        <img src="https://th.bing.com/th/id/OIP.zQUQo6LwrfGXICFOZ2FiIQHaHa?w=213&h=213&c=7&r=0&o=5&pid=1.7" alt="Black and White pic young" height="200px" width="200px">
+                        <figcaption><small> Young Katherine Johnson. <br>Courtesy |&nbsp;<a class="gallerylink" href="https://bing.com">bing</a></small></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://th.bing.com/th/id/R.45a236b87c847392ad25a7736391a7b6?rik=yY3os%2bMbW4LobA&pid=ImgRaw&r=0" alt="" height="200px" width="200px">
+                        <figcaption><small>Young Katherine Johnson. <br>Courtesy |&nbsp;<a  class="gallerylink" href="https://bing.com">bing</a></small></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://th.bing.com/th/id/OIP.1-b5JQXATyFbm_6EH3q02wHaIu?pid=ImgDet&w=1024&h=1207&rs=1" alt="" height="200px" width="200px">
+                        <figcaption><small>Older Katherine Johnson. <br>Courtesy |&nbsp;<a class="gallerylink" href="https://bing.com">bing</a></small></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://wallpapercave.com/wp/wp5692532.jpg" alt="" height="200px" width="200px">
+                        <figcaption><small>Katherine Johnson recieving<br> presidential medal of freedom in 2015 <br>Courtesy |<a class="gallerylink" href="https://wallpapercave.com">wallpapercave</a></small></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://th.bing.com/th/id/R.63cdaaeaf9ef9cd2f37711ed5f82df43?rik=2AEAPd9Q6QYe0w&pid=ImgRaw&r=0" alt="" height="200px" width="200px">
+                        <figcaption><small>Older Katherine Johnson. <br>Courtesy |&nbsp;<a class="gallerylink" href="https://bing.com">bing</a></small></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://www.katherinejohnsonfoundation.org/wp-content/uploads/2022/01/Johnson-family-photo@2x.png" alt="" height="200px" width="200px">
+                        <figcaption>
+                            <small>
+                                Katherine Johnson with her girls in 1949. From left to
+                                right: Constance (Connie), Katherine (Kathy), and
+                                Joylette. This image is used by the KCGJ Foundation with permission by its copyright owner, the KCJ Estate.
+                            </small>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://th.bing.com/th/id/R.e1a8a16b2fafbead636bf8e85ca1762b?rik=U43hKRgApx5rjQ&riu=http%3a%2f%2fwww4.pictures.zimbio.com%2fgi%2fPresident%2bObama%2bPresents%2bPresidential%2bMedal%2b6A-QveJ_w_Kx.jpg&ehk=JRGKRKHlLB6U7u9sOJkX04XvixyQlTuVMaT4VUrjx4U%3d&risl=&pid=ImgRaw&r=0" alt="" height="200px" width="200px">
+                        <figcaption><small>Katherine Johnson and Husband, Jim Johnson.
+                             <br> Courtesy |&nbsp;<a class="gallerylink" href="https://bing.com">bing</a></small>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://answersafrica.com/wp-content/uploads/2020/08/Katherine-Johnson-1-e1596406260698-681x459.jpg" alt="" height="200px" width="200px">
+                        <figcaption><small>Older Katherine Johnson and some family members. <br> Courtesy |&nbsp;<a class="gallerylink" href="https://answersafrica.com">answersafrica</a></small></figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <hr>
+            <section id="quotes" title="Quotes">
+                <h3>Quotes</h3>
+                <div class="quotesleft">
+                    <blockquote>“Like what you do, and then you will do your best.”</blockquote>
+                </div>
+                <br>
+                <div class="quotesright">
+                    <blockquote>“Know how to learn. Then, want to learn."</blockquote>
+                </div>
+                <br>
+                <div class="quotesleft">
+                    <blockquote>“Girls are capable of doing everything men are capable of doing. Sometimes they have more imagination than men.”</blockquote>
+                </div>
+                <br>
+                <div class="quotesright">
+                    <a href="https://thehabitstacker.com/katherine-johnson-quotes/#:~:text=%2037%20Inspirational%20Katherine%20Johnson%20Quotes%20%201,just%20doing%20my%20job.%E2%80%9D%20%E2%80%93%20Katherine...%20More%20" target="_blank">More quotes >>></a>
+                </div>
+                
+            </section>
+            <hr>
+            <section id="praise" class="praise" title="Praise for Katherine Johnson">
+                <h3>Praise for Katherine Johnson</h3>
+                <div>
+                    <blockquote>
+                        <p>
+                            "Our NASA family is sad to learn the news that Katherine Johnson passed away this morning at 101 years old. She was an American Hero and her pioneering legacy will never be forgotten.
+                         </p>
+                        <p>
+                            Ms. Johnson helped our nation enlarge the frontiers of sspace even as she made huge strides that also opened doors for women and people of colour in the universal human quest to explore space.
+                        </p>
+                        <p>
+                            Her dedication and skill as a mathematician helped put humans on the moon and before that mde it possible that made it possible for our astronauts to take the first steps in space that we now follow on a journey to Mars."  
+                        </p>
+                        <p class="praiseright">
+                            <strong>James Bridenstine</strong>, NASA Administrator
+                        </p>
+                    </blockquote>
+                </div>
+            </section>
+            <hr>
+            <footer>
+                <p>
+                    To know more about the life of this astounding woman
+                </p>
+                <a class="footerlink" href="https://en.m.wikipedia.org/wiki/Katherine_Johnson" target="_blank">
+                    Visit this page
+                </a>
+                <br>
+                <br>
+                <p> Contact me:&ensp;
+                <a href="https://twitter.com/Issie_TBH" class="icon">
+                    <i class="fa-brands fa-twitter"> &ensp;</i>
+                </a> 
+                <a href="https://github.com/Issiedoesit" class="icon">
+                    <i class="fa-brands fa-git">&ensp;</i>
+                </a>
+                <a href="https://codepen.io/issiedoesit" class="icon">
+                    <i class="fa-brands fa-codepen">&ensp;</i>
+                </a>
+                </p>
+                <p>
+                    <small>&copy; Issiedoesit 2022</small>
+                </p>
+            </footer>
+        </main>
+    </section>
+</body>
+</html>
