@@ -1,8 +1,5 @@
-# Check if two words are anagrams 
-# Example:
-# find_anagrams("hello", "check") --> False
-# find_anagrams("below", "elbow") --> True
-
+#Numbers can be used within anagrams and can be anagrams themselves. 
+#To run the program to remove numbers, Uncomment line 39 and 40
 
 import string
 print(' ')
@@ -20,8 +17,6 @@ while True:
         word_two = anagram.lower()
         word_one = ''.join(str(word_one).split(' '))
         word_two = ''.join(str(word_two).split(' '))
-        #print(word_one)
-        #print(word_two)
 
         words = word_one
         new_words_one = []
@@ -31,7 +26,6 @@ while True:
                     word = word.replace(letter,"")   
             new_words_one.append(word)
 
-        #print(new_words_one)
 
         words = word_two
         new_words_two = []
@@ -40,15 +34,16 @@ while True:
                 if letter in string.punctuation:
                         word = word.replace(letter,"")   
             new_words_two.append(word)
-        #print(new_words_two)
+       
+       
+        #new_words_one = ''.join([i for i in new_words_one if not i.isdigit()])
+        #new_words_two = ''.join([i for i in new_words_two if not i.isdigit()])
 
         word_one_joined = ''.join(new_words_one)
         word_two_joined = ''.join(new_words_two)
         word_one_sort = sorted(word_one_joined)
         word_two_sort = sorted(word_two_joined)
       
-        #print(word_one_sort)
-        #print(word_two_sort)
 
         print(' ')
         print('Running Anagrammer on \" {} \" and \" {} \"'.format(word_entry, anagram))
