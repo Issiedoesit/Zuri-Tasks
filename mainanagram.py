@@ -8,7 +8,7 @@ import string
 print(' ')
 print("Welcome to Anagrammer. We accept input of any two words and determine if they are anagrams")
 print(' ')
-print('Please note that all punctuations and capital letters in your entry are cleaned and do not count in our program')
+print('Please note that all punctuations and capital letters in your entry are cleaned and do not count in our program.\nIt will return True or False on whether they are anagrams')
 print(' ')
 while True:
 
