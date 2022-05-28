@@ -2,13 +2,13 @@ import string
 
 
 def read_file_content(story):
-        with open(story) as f:
-            contents = f.read()
-            print('')
-            print('The text within the file is:')
-            print('')
-            print(str(contents))
-            return contents.split()
+    with open(story) as f:
+        contents = f.read()
+        print('')
+        print('The text within the file is:')
+        print('')
+        print(str(contents))
+        return contents.split()
 
 
 
@@ -21,7 +21,6 @@ from collections import Counter
 
 
 def count_words():
-    
     words = text
     new_words = []
     for word in words:
