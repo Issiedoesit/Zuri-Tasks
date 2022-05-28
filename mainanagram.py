@@ -1,5 +1,3 @@
-#Numbers can be used within anagrams and can be anagrams themselves. 
-#To run the program to remove numbers, Uncomment line 39 and 40
 
 import string
 print(' ')
@@ -7,6 +5,10 @@ print("Welcome to Anagrammer. We accept input of any two words and determine if 
 print(' ')
 print('Please note that all punctuations and capital letters in your entry are cleaned and do not count in our program.\nIt will return True or False on whether they are anagrams')
 print(' ')
+
+#Numbers can be used within anagrams and can be anagrams themselves. 
+#To run the program to remove numbers, Uncomment line 41 and 42
+
 while True:
 
     def find_anagram(word_entry, anagram):
